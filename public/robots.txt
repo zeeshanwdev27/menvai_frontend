@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://menvai.org/sitemap.xml
