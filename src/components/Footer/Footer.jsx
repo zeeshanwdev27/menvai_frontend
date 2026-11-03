@@ -19,7 +19,24 @@ function Footer() {
     <>
       <div className=" lg:py-10 px-5 lg:px-14 w-full border-t border-gray-200 shadow-sm overflow-hidden flex flex-col gap-8">
   {/* First Row */}
-        <div className="flex flex-col gap-3 mt-7 lg:mt-0">
+        {/* <div className="flex flex-col gap-3 mt-7 lg:mt-0">
+              <Link to="/" className="flex justify-center lg:justify-start">
+      <img
+        src='/logo.png'
+        className="h-8 lg:h-8 object-contain cursor-pointer"
+        alt="GYMSHARK_LOGO"
+      />
+    </Link>
+
+    <p className="text-sm text-center lg:text-start">EVERYDAY COMFORT STARTS HERE</p>
+          
+        </div> */}
+
+  {/* Second Row */}
+        <div className="lg:flex lg:justify-between w-full">
+
+
+                  <div className="flex flex-col gap-3 mt-7 lg:mt-0">
               <Link to="/" className="flex justify-center lg:justify-start">
       <img
         src='/logo.png'
@@ -31,9 +48,6 @@ function Footer() {
     <p className="text-sm text-center lg:text-start">EVERYDAY COMFORT STARTS HERE</p>
           
         </div>
-
-  {/* Second Row */}
-        <div className="lg:flex lg:justify-between w-full">
 
           <div className="hidden lg:flex justify-center items-center gap-2">
             <img
@@ -63,7 +77,7 @@ function Footer() {
             />
           </div>
 
-          <div className="flex justify-center items-center gap-3 mb-5 lg:mb-0">
+          {/* <div className="flex justify-center items-center gap-3 mb-5 lg:mb-0">
             <a
               href="https://facebook.com"
               target="_blank"
@@ -113,9 +127,9 @@ function Footer() {
             >
               <FaPinterest className="lg:w-6 lg:h-6 w-5 h-5 hover:text-red-500 transition-colors" />
             </a>
-          </div>
+          </div> */}
 
-          <div className="lg:hidden flex flex-col gap-3 justify-center items-center">
+          {/* <div className="lg:hidden flex flex-col gap-3 justify-center items-center">
           <ul className="flex flex-col justify-center items-center gap-3 text-sm">
             <li className="font-semibold text-black cursor-pointer opacity-70 hover:opacity-100 transition">
               Terms and Conditions
@@ -145,7 +159,7 @@ function Footer() {
               ROW
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="lg:hidden flex justify-center items-center gap-2 py-7">
             <img
@@ -174,6 +188,9 @@ function Footer() {
               alt="applepay"
             />
           </div>
+
+
+          
 
         </div>
       </div>
