@@ -24,78 +24,87 @@ function New_In() {
     const [cardData, setCardData] = useState({});
 
 
-  const crouselData = [
+
+const crouselData = [
+  // MEN'S SOCKS
   {
-    front_img: "./products/socks/blacksock.jpg",
-    back_img: "./products/socks/blacksock.jpg",
-    product_data: ["Classic Crew Socks", "Regular Fit", "Black"],
+    front_img: "/products/socks/blacksock.jpg",
+    back_img: "/products/socks/blacksock.jpg",
+    product_data: ["Essential Crew Socks", "Regular Fit", "Black"],
     product_price: 14,
-    product_rating: "★4.5",
+    product_rating: "4.5",
   },
   {
-    front_img: "./products/socks/whitesock.jpg",
-    back_img: "./products/socks/whitesock.jpg",
-    product_data: ["Classic Crew Socks", "Regular Fit", "White"],
+    front_img: "/products/socks/whitesock.jpg",
+    back_img: "/products/socks/whitesock.jpg",
+    product_data: ["Premium Crew Socks", "Regular Fit", "White"],
     product_price: 14,
-    product_rating: "★4.7",
+    product_rating: "4.7",
   },
+
+  // MEN'S TANK TOPS
   {
-    front_img: "./products/tanktop/blacktanktop.jpg",
-    back_img: "./products/tanktop/blacktanktop.jpg",
-    product_data: ["Essential Training Tank Top", "Regular Fit", "Black"],
+    front_img: "/products/tanktop/blacktanktop.jpg",
+    back_img: "/products/tanktop/blacktanktop.jpg",
+    product_data: ["Essential Tank Top", "Regular Fit", "Black"],
     product_price: 35,
-    product_rating: "★4.6",
+    product_rating: "4.6",
   },
   {
-    front_img: "./products/tanktop/browntanktop.jpg",
-    back_img: "./products/tanktop/browntanktop.jpg",
-    product_data: ["Essential Training Tank Top", "Regular Fit", "Brown"],
+    front_img: "/products/tanktop/browntanktop.jpg",
+    back_img: "/products/tanktop/browntanktop.jpg",
+    product_data: ["Ribbed Tank Top", "Slim Fit", "Brown"],
     product_price: 35,
-    product_rating: "★4.4",
+    product_rating: "4.4",
   },
+
+  // MEN'S UNDERWEAR
   {
-    front_img: "./products/underwear/grayvshape.jpg",
-    back_img: "./products/underwear/grayvshape.jpg",
-    product_data: ["V-Shape Boxer Briefs", "Regular Fit", "Gray"],
-    product_price: 22,
-    product_rating: "★4.5",
-  },
-  {
-    front_img: "./products/underwear/grayboxer.jpg",
-    back_img: "./products/underwear/grayboxer.jpg",
-    product_data: ["Classic Boxer Briefs", "Regular Fit", "Gray"],
+    front_img: "/products/underwear/grayvshape.jpg",
+    back_img: "/products/underwear/grayvshape.jpg",
+    product_data: ["Essential V-Shape Briefs", "Regular Fit", "Gray"],
     product_price: 20,
-    product_rating: "★4.3",
+    product_rating: "4.5",
   },
   {
-    front_img: "./products/underwear/blackboxer.jpg",
-    back_img: "./products/underwear/blackboxer.jpg",
-    product_data: ["Classic Boxer Briefs", "Regular Fit", "Black"],
+    front_img: "/products/underwear/grayboxer.jpg",
+    back_img: "/products/underwear/grayboxer.jpg",
+    product_data: ["Classic Boxer Briefs", "Comfort Fit", "Gray"],
+    product_price: 25,
+    product_rating: "4.3",
+  },
+  {
+    front_img: "/products/underwear/blackboxer.jpg",
+    back_img: "/products/underwear/blackboxer.jpg",
+    product_data: ["Classic Boxer Briefs", "Comfort Fit", "Black"],
+    product_price: 25,
+    product_rating: "4.6",
+  },
+  {
+    front_img: "/products/underwear/whiteboxer.jpg",
+    back_img: "/products/underwear/whiteboxer.jpg",
+    product_data: ["Classic Boxer Briefs", "Comfort Fit", "White"],
     product_price: 20,
-    product_rating: "★4.6",
+    product_rating: "4.4",
   },
+
+  // MEN'S TANK TOPS
   {
-    front_img: "./products/underwear/whiteboxer.jpg",
-    back_img: "./products/underwear/whiteboxer.jpg",
-    product_data: ["Classic Boxer Briefs", "Regular Fit", "White"],
-    product_price: 20,
-    product_rating: "★4.4",
-  },
-  {
-    front_img: "./products/tanktop/yellowtanktop.jpg",
-    back_img: "./products/tanktop/yellowtanktop.jpg",
-    product_data: ["Essential Training Tank Top", "Regular Fit", "Yellow"],
+    front_img: "/products/tanktop/yellowtanktop.jpg",
+    back_img: "/products/tanktop/yellowtanktop.jpg",
+    product_data: ["Essential Tank Top", "Regular Fit", "Yellow"],
     product_price: 35,
-    product_rating: "★4.5",
+    product_rating: "4.5",
   },
   {
-    front_img: "./products/tanktop/greentanktop.jpg",
-    back_img: "./products/tanktop/greentanktop.jpg",
-    product_data: ["Essential Training Tank Top", "Regular Fit", "Green"],
+    front_img: "/products/tanktop/greentanktop.jpg",
+    back_img: "/products/tanktop/greentanktop.jpg",
+    product_data: ["Essential Tank Top", "Regular Fit", "Green"],
     product_price: 35,
-    product_rating: "★4.7",
+    product_rating: "4.7",
   },
 ];
+
 
   const visibleSlides = 4;
   const maxIndex = crouselData.length - visibleSlides;
@@ -122,7 +131,7 @@ function New_In() {
         <div className="flex gap-7 justify-between lg:justify-center items-center w-full lg:w-auto">
           <h1 className="text-2xl font-bold">NEW IN</h1>
           <Link
-            to={"#"}
+            to="collections/mens"
             className="text-md underline relative top-[2px] font-bold hover:text-gray-700"
           >
             View All

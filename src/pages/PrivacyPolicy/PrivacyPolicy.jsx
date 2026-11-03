@@ -192,24 +192,24 @@ const sections = [
       </p>
     ),
   },
-  {
-    id: "contact",
-    title: "Contact Us",
-    content: (
-      <>
-        <p>
-          If you have any questions about this Privacy Policy or how your
-          information is handled, please contact {BRAND}:
-        </p>
-        <ul>
-          <li>
-            Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-          </li>
-          <li>Phone / WhatsApp: {PHONE}</li>
-        </ul>
-      </>
-    ),
-  },
+  // {
+  //   id: "contact",
+  //   title: "Contact Us",
+  //   content: (
+  //     <>
+  //       <p>
+  //         If you have any questions about this Privacy Policy or how your
+  //         information is handled, please contact {BRAND}:
+  //       </p>
+  //       <ul>
+  //         <li>
+  //           Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+  //         </li>
+  //         <li>Phone / WhatsApp: {PHONE}</li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
 ];
 
 function PrivacyPolicy() {

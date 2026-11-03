@@ -1,22 +1,14 @@
 import React, { useState, useEffect } from "react";
 import {
-  Heart,
   ShoppingBag,
-  User,
   Search,
   Menu as MenuIcon,
 } from "lucide-react";
-import Menu from "./Menu/Menu";
 import { motion } from "motion/react";
 import SearchBoxOverlay from "./SearchBoxOverlay/SearchBoxOverlay";
 import HamburgerOverlay from "./HamburgerOverlay/HamburgerOverlay";
 import AddToCartOverlay from "./AddToCartOverlay/AddToCartOverlay";
 import { Link } from "react-router-dom";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { useSelector } from "react-redux";
 
 function Main_Navbar({ isScrolled }) {
@@ -81,13 +73,13 @@ function Main_Navbar({ isScrolled }) {
 
 
       {/* Mobile Hamburger */}
-    <button className="block lg:hidden">
+    {/* <button className="block lg:hidden">
       <MenuIcon
         className="w-6 h-6"
         strokeWidth={1.5}
         onClick={() => setShowMenu(true)}
       />
-    </button>
+    </button> */}
 
   {/* Center Side: Logo */}
   <div className="flex justify-center ">
@@ -159,7 +151,7 @@ function Main_Navbar({ isScrolled }) {
       {/* Shopping Icons */}
       <li className="cursor-pointer group relative" onClick={() => setAddToCart(true)}>
         <ShoppingBag
-          className="w-5 h-6 cursor-pointer transform transition duration-300 group-hover:-translate-y-1"
+          className="w-7 h-7 lg:w-5 lg:h-6 cursor-pointer transform transition duration-300 group-hover:-translate-y-1"
           strokeWidth={1.5}
         />
         {

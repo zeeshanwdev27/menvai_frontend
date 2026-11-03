@@ -262,24 +262,24 @@ const sections = [
       </p>
     ),
   },
-  {
-    id: "contact",
-    title: "Contact Us",
-    content: (
-      <>
-        <p>
-          For questions about these terms, your order or a return, please
-          contact {BRAND}:
-        </p>
-        <ul>
-          <li>
-            Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-          </li>
-          <li>Phone / WhatsApp: {PHONE}</li>
-        </ul>
-      </>
-    ),
-  },
+  // {
+  //   id: "contact",
+  //   title: "Contact Us",
+  //   content: (
+  //     <>
+  //       <p>
+  //         For questions about these terms, your order or a return, please
+  //         contact {BRAND}:
+  //       </p>
+  //       <ul>
+  //         <li>
+  //           Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+  //         </li>
+  //         <li>Phone / WhatsApp: {PHONE}</li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
 ];
 
 function TermsAndConditions() {

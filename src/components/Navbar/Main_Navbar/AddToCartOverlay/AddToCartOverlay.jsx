@@ -19,7 +19,7 @@ import {
   removeToCart,
 } from "../../../../features/Cart/CartSlice";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 
 function AddToCartOverlay({ addToCart, setAddToCart }) {
   const items = useSelector((state) => state.carts);
@@ -76,8 +76,9 @@ function AddToCartOverlay({ addToCart, setAddToCart }) {
               </h2>
 
               <div className="flex items-center gap-4">
+
                 <div className="flex justify-center items-center  bg-gray-100 rounded-full cursor-pointer">
-                  <div
+                  {/* <div
                     onClick={() => setIconActive(!iconActive)}
                     className={`${
                       iconActive
@@ -86,9 +87,9 @@ function AddToCartOverlay({ addToCart, setAddToCart }) {
                     } px-5 py-2 rounded-full`}
                   >
                     <ShoppingBag className="w-4.5 h-5" strokeWidth={1.5} />
-                  </div>
+                  </div> */}
 
-                  <div
+                  {/* <div
                     onClick={() => setIconActive(!iconActive)}
                     className={`${
                       iconActive
@@ -97,7 +98,8 @@ function AddToCartOverlay({ addToCart, setAddToCart }) {
                     } px-5 py-2 rounded-full`}
                   >
                     <Heart className="w-4.5 h-5" strokeWidth={1.5} />
-                  </div>
+                  </div> */}
+
                 </div>
 
                 <button
@@ -107,6 +109,7 @@ function AddToCartOverlay({ addToCart, setAddToCart }) {
                   <X className="w-7 h-7  text-black" strokeWidth={1.4} />
                 </button>
               </div>
+              
             </div>
 
             {/*** Body ***/}
@@ -298,9 +301,9 @@ function AddToCartOverlay({ addToCart, setAddToCart }) {
                       }}
                       className="h-auto w-1/2 py-3 text-sm font-bold cursor-pointer rounded-4xl"
                     >
-                      SHOP MENS
+                      SHOP NOW
                     </Button>
-                    <Button
+                    {/* <Button
                       onClick={() => {
                         navigate("/collections/womens");
                         setAddToCart(false);
@@ -308,7 +311,7 @@ function AddToCartOverlay({ addToCart, setAddToCart }) {
                       className="h-auto w-1/2 py-3 text-sm font-bold cursor-pointer rounded-4xl"
                     >
                       SHOP WOMENS
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               ))}
